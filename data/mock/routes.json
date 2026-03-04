@@ -1,0 +1,745 @@
+{
+  "/homepage": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Willowbrook Farm",
+          "path": "/homepage",
+          "heroTitle": "Grown with Care, Shared with Love",
+          "heroSubtitle": "Willowbrook Farm",
+          "heroDescription": {
+            "processed": "<p>For four generations, the Hartley family has been cultivating 150 acres of rich farmland using sustainable practices. Visit our farm stand, join a seasonal U-pick event, or have fresh produce delivered to your door through our CSA program.</p>",
+            "summary": "For four generations, the Hartley family has been cultivating 150 acres of rich farmland using sustainable practices. Visit our farm stand, join a seasonal U-pick event, or have fresh produce delivere"
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-acres",
+              "title": "",
+              "number": "150",
+              "label": "Acres Farmed"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-crops",
+              "title": "",
+              "number": "60+",
+              "label": "Crop Varieties"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-years",
+              "title": "",
+              "number": "4",
+              "label": "Generations"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-families",
+              "title": "",
+              "number": "500+",
+              "label": "Families Served Weekly"
+            }
+          ],
+          "featuredItemsTitle": "From Our Fields",
+          "ctaTitle": "Visit the Farm",
+          "ctaDescription": {
+            "processed": "<p>Our farm stand is open year-round with the freshest seasonal produce, farm-raised meats, eggs, and artisan goods. Join our CSA program for weekly deliveries of the best the farm has to offer.</p>",
+            "summary": "Our farm stand is open year-round with the freshest seasonal produce, farm-raised meats, eggs, and artisan goods. Join our CSA program for weekly deliveries of the best the farm has to offer."
+          },
+          "ctaPrimary": "Shop Farm Stand",
+          "ctaSecondary": "Join Our CSA"
+        }
+      }
+    }
+  },
+  "/products/heirloom-tomatoes": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeProduct",
+          "id": "product-heirloom-tomatoes",
+          "title": "Heirloom Tomatoes",
+          "path": "/products/heirloom-tomatoes",
+          "body": {
+            "processed": "<p>Our heirloom tomatoes are the pride of Willowbrook Farm. We grow over 20 varieties including Brandywine, Cherokee Purple, Green Zebra, and Black Krim. Each variety is chosen for exceptional flavor and grown using organic methods in our rich, compost-amended soil.</p><h2>Growing Practices</h2><p>Our tomatoes are started from saved seed in our greenhouse in March, transplanted to the fields in May, and hand-harvested at peak ripeness from July through October. We use companion planting and integrated pest management to keep our crops healthy without synthetic chemicals.</p>",
+            "summary": "Our heirloom tomatoes are the pride of Willowbrook Farm. We grow over 20 varieties including Brandywine, Cherokee Purple, Green Zebra, and Black Krim. Each variety is chosen for exceptional flavor and"
+          },
+          "productCategory": [
+            {
+              "id": "Vegetables",
+              "name": "Vegetables"
+            }
+          ],
+          "price": "$4.50",
+          "unit": "per pound",
+          "available": true,
+          "growingMethod": "Certified Organic",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=800&q=80",
+            "alt": "Colorful heirloom tomatoes in a basket",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        }
+      }
+    }
+  },
+  "/products/pasture-raised-eggs": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeProduct",
+          "id": "product-pasture-eggs",
+          "title": "Pasture-Raised Eggs",
+          "path": "/products/pasture-raised-eggs",
+          "body": {
+            "processed": "<p>Our hens roam freely across lush pastures, foraging for insects, seeds, and grasses that give their eggs rich, golden yolks and exceptional flavor. We raise a mix of heritage breeds including Rhode Island Reds, Buff Orpingtons, and Ameraucanas, producing eggs in shades of brown, cream, and blue.</p><h2>Our Flock</h2><p>We maintain a flock of approximately 200 hens that are rotated to fresh pasture regularly. The birds have access to clean water, supplemental organic feed, and comfortable coops for nighttime roosting. We never use antibiotics or hormones.</p>",
+            "summary": "Our hens roam freely across lush pastures, foraging for insects, seeds, and grasses that give their eggs rich, golden yolks and exceptional flavor. We raise a mix of heritage breeds including Rhode Is"
+          },
+          "productCategory": [
+            {
+              "id": "Eggs & Dairy",
+              "name": "Eggs & Dairy"
+            }
+          ],
+          "price": "$7.00",
+          "unit": "per dozen",
+          "available": true,
+          "growingMethod": "Pasture-Raised, No Antibiotics",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?w=800&q=80",
+            "alt": "Basket of fresh pasture-raised eggs in various colors",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        }
+      }
+    }
+  },
+  "/products/raw-honey": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeProduct",
+          "id": "product-raw-honey",
+          "title": "Raw Wildflower Honey",
+          "path": "/products/raw-honey",
+          "body": {
+            "processed": "<p>Our bees forage on the wildflowers, clover, and fruit blossoms across our farm and the surrounding countryside, producing a rich, complex honey that changes character with the seasons. Spring honey is light and floral, while fall honey is darker with notes of goldenrod and aster.</p><h2>Our Apiaries</h2><p>We maintain 30 hives across the farm, positioned near different flowering areas. Our beekeeper, Tom Hartley, practices natural beekeeping methods and never treats the hives with synthetic chemicals. The honey is strained but never heated, preserving all its natural enzymes and benefits.</p>",
+            "summary": "Our bees forage on the wildflowers, clover, and fruit blossoms across our farm and the surrounding countryside, producing a rich, complex honey that changes character with the seasons. Spring honey is"
+          },
+          "productCategory": [
+            {
+              "id": "Honey & Preserves",
+              "name": "Honey & Preserves"
+            }
+          ],
+          "price": "$12.00",
+          "unit": "per 16 oz jar",
+          "available": true,
+          "growingMethod": "Raw, Unprocessed",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80",
+            "alt": "Jar of golden raw honey with honeycomb",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        }
+      }
+    }
+  },
+  "/products/grass-fed-beef": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeProduct",
+          "id": "product-grass-fed-beef",
+          "title": "Grass-Fed Beef",
+          "path": "/products/grass-fed-beef",
+          "body": {
+            "processed": "<p>Our small herd of Angus cattle is raised entirely on pasture, grazing on the diverse grasses and legumes that grow across our hillside fields. The beef is dry-aged for 21 days for superior tenderness and flavor. We offer individual cuts and quarter, half, and whole beef shares.</p><h2>Raising Practices</h2><p>Our cattle are born and raised on the farm, spending their entire lives on pasture. They are never given growth hormones or routine antibiotics. We work with a local USDA-inspected processor to ensure the highest quality cuts.</p>",
+            "summary": "Our small herd of Angus cattle is raised entirely on pasture, grazing on the diverse grasses and legumes that grow across our hillside fields. The beef is dry-aged for 21 days for superior tenderness "
+          },
+          "productCategory": [
+            {
+              "id": "Meat & Poultry",
+              "name": "Meat & Poultry"
+            }
+          ],
+          "price": "$8.50",
+          "unit": "per pound (ground beef)",
+          "available": true,
+          "growingMethod": "100% Grass-Fed, No Hormones",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800&q=80",
+            "alt": "Grass-fed cattle grazing on green pasture",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": false
+        }
+      }
+    }
+  },
+  "/seasons/spring": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeSeason",
+          "id": "season-spring",
+          "title": "Spring on the Farm",
+          "path": "/seasons/spring",
+          "body": {
+            "processed": "<p>Spring is a time of renewal at Willowbrook Farm. As the frost recedes, we begin preparing our fields, starting seedlings in the greenhouse, and welcoming new lambs and chicks. Visitors can enjoy asparagus picking, greenhouse tours, and our popular Spring Open Farm Day.</p><h2>U-Pick Events</h2><p>Join us for U-pick strawberries beginning in late May. Bring the family, pick your own berries, and enjoy complimentary lemonade at the farm stand. Check our calendar for exact dates as they depend on weather conditions.</p>",
+            "summary": "Spring is a time of renewal at Willowbrook Farm. As the frost recedes, we begin preparing our fields, starting seedlings in the greenhouse, and welcoming new lambs and chicks. Visitors can enjoy aspar"
+          },
+          "startMonth": "March",
+          "endMonth": "May",
+          "whatsGrowing": [
+            "Asparagus",
+            "Lettuce",
+            "Spinach",
+            "Radishes",
+            "Peas",
+            "Strawberries",
+            "Spring onions",
+            "Rhubarb"
+          ],
+          "farmActivities": [
+            "U-pick strawberries",
+            "Greenhouse tours",
+            "Spring Open Farm Day",
+            "Baby animal visits",
+            "Planting workshops"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80",
+            "alt": "Spring fields with fresh green crops emerging",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/seasons/summer": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeSeason",
+          "id": "season-summer",
+          "title": "Summer on the Farm",
+          "path": "/seasons/summer",
+          "body": {
+            "processed": "<p>Summer is harvest season at Willowbrook. Our fields are bursting with tomatoes, corn, peppers, melons, and berries. The farm stand is at its fullest, and our Saturday market days feature live music, cooking demos, and farm tours.</p><h2>Farm Dinners</h2><p>Join us for our popular Farm Table Dinner series, held on select Friday evenings in the barn. Local chefs prepare a multi-course meal using ingredients harvested that day. Seating is limited and reservations fill quickly.</p>",
+            "summary": "Summer is harvest season at Willowbrook. Our fields are bursting with tomatoes, corn, peppers, melons, and berries. The farm stand is at its fullest, and our Saturday market days feature live music, c"
+          },
+          "startMonth": "June",
+          "endMonth": "August",
+          "whatsGrowing": [
+            "Tomatoes",
+            "Sweet corn",
+            "Peppers",
+            "Cucumbers",
+            "Zucchini",
+            "Blueberries",
+            "Peaches",
+            "Beans",
+            "Melons",
+            "Basil"
+          ],
+          "farmActivities": [
+            "U-pick blueberries",
+            "Farm Table Dinner series",
+            "Saturday market days",
+            "Farm tours",
+            "Cooking demos"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=800&q=80",
+            "alt": "Lush summer farm field with rows of crops",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/seasons/fall": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeSeason",
+          "id": "season-fall",
+          "title": "Fall on the Farm",
+          "path": "/seasons/fall",
+          "body": {
+            "processed": "<p>Fall is festival season at Willowbrook. Our pumpkin patch opens in late September, the apple orchard is ripe for picking, and our annual Harvest Festival draws families from across the region. The farm stand transitions to hearty root vegetables, winter squash, and preserved goods.</p><h2>Harvest Festival</h2><p>Our annual Harvest Festival is held the third weekend of October and features a corn maze, hayrides, pumpkin decorating, apple cider pressing, live music, and a farm-to-table lunch. It is our biggest event of the year and a beloved community tradition.</p>",
+            "summary": "Fall is festival season at Willowbrook. Our pumpkin patch opens in late September, the apple orchard is ripe for picking, and our annual Harvest Festival draws families from across the region. The far"
+          },
+          "startMonth": "September",
+          "endMonth": "November",
+          "whatsGrowing": [
+            "Pumpkins",
+            "Apples",
+            "Winter squash",
+            "Sweet potatoes",
+            "Kale",
+            "Brussels sprouts",
+            "Turnips",
+            "Beets"
+          ],
+          "farmActivities": [
+            "U-pick apples",
+            "Pumpkin patch",
+            "Corn maze",
+            "Annual Harvest Festival",
+            "Cider pressing",
+            "Hayrides"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=800&q=80",
+            "alt": "Autumn pumpkin patch with colorful fall foliage",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/seasons/winter": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeSeason",
+          "id": "season-winter",
+          "title": "Winter on the Farm",
+          "path": "/seasons/winter",
+          "body": {
+            "processed": "<p>Winter is a quieter time at Willowbrook, but the farm stand stays open with stored root vegetables, preserved goods, frozen meats, and holiday gift boxes. Our greenhouse continues to produce greens, herbs, and microgreens throughout the cold months.</p><h2>Holiday Offerings</h2><p>Our holiday gift boxes make perfect presents, featuring farm honey, jams, maple syrup, beeswax candles, and dried herbs. We also sell fresh-cut Christmas trees and hand-made wreaths from our tree lot in December.</p>",
+            "summary": "Winter is a quieter time at Willowbrook, but the farm stand stays open with stored root vegetables, preserved goods, frozen meats, and holiday gift boxes. Our greenhouse continues to produce greens, h"
+          },
+          "startMonth": "December",
+          "endMonth": "February",
+          "whatsGrowing": [
+            "Greenhouse greens",
+            "Microgreens",
+            "Herbs",
+            "Stored root vegetables"
+          ],
+          "farmActivities": [
+            "Holiday gift boxes",
+            "Christmas tree lot",
+            "Wreath making workshops",
+            "Farm stand (limited hours)",
+            "Winter CSA shares"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1482517967863-00e15c9b44be?w=800&q=80",
+            "alt": "Snow-covered farm with red barn in winter",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1482517967863-00e15c9b44be?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1482517967863-00e15c9b44be?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1482517967863-00e15c9b44be?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/recipes/heirloom-caprese-salad": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeRecipe",
+          "id": "recipe-caprese",
+          "title": "Heirloom Tomato Caprese Salad",
+          "path": "/recipes/heirloom-caprese-salad",
+          "body": {
+            "processed": "<p>This simple salad lets our stunning heirloom tomatoes shine. Use a variety of colors and shapes for a beautiful presentation. The key is using tomatoes at the peak of ripeness, the best olive oil you can find, and fresh basil picked moments before serving.</p><h2>Instructions</h2><ol><li>Slice tomatoes into 1/4-inch thick slices and arrange on a large platter</li><li>Tear fresh mozzarella into pieces and tuck between tomato slices</li><li>Scatter torn basil leaves over the top</li><li>Drizzle generously with extra-virgin olive oil</li><li>Sprinkle with flaky sea salt and freshly cracked black pepper</li><li>Finish with a drizzle of aged balsamic vinegar</li><li>Serve immediately at room temperature</li></ol>",
+            "summary": "This simple salad lets our stunning heirloom tomatoes shine. Use a variety of colors and shapes for a beautiful presentation. The key is using tomatoes at the peak of ripeness, the best olive oil you "
+          },
+          "prepTime": "10 minutes",
+          "cookTime": "None",
+          "servings": "4",
+          "ingredients": [
+            "3 large heirloom tomatoes (mixed varieties)",
+            "8 oz fresh mozzarella",
+            "1 bunch fresh basil",
+            "3 tbsp extra-virgin olive oil",
+            "1 tbsp aged balsamic vinegar",
+            "Flaky sea salt",
+            "Freshly cracked black pepper"
+          ],
+          "recipeCategory": [
+            {
+              "id": "Salads",
+              "name": "Salads"
+            }
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=800&q=80",
+            "alt": "Beautiful heirloom tomato caprese salad with fresh basil",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/recipes/farm-fresh-frittata": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeRecipe",
+          "id": "recipe-farm-frittata",
+          "title": "Farm-Fresh Vegetable Frittata",
+          "path": "/recipes/farm-fresh-frittata",
+          "body": {
+            "processed": "<p>This versatile frittata is the perfect way to showcase whatever is fresh from the farm stand. Use any combination of seasonal vegetables. This recipe is a favorite at our Farm Table Dinners and works beautifully for breakfast, brunch, or a light dinner.</p><h2>Instructions</h2><ol><li>Preheat oven to 375 degrees F</li><li>Saute onion and garlic in olive oil in an oven-safe skillet until softened</li><li>Add chopped seasonal vegetables and cook until just tender, about 5 minutes</li><li>Whisk eggs with cream, salt, pepper, and herbs</li><li>Pour egg mixture over vegetables in the skillet</li><li>Sprinkle with grated cheese</li><li>Cook on stovetop over medium heat for 3 minutes until edges begin to set</li><li>Transfer to oven and bake for 15-18 minutes until golden and set in center</li><li>Let cool 5 minutes before slicing into wedges</li></ol>",
+            "summary": "This versatile frittata is the perfect way to showcase whatever is fresh from the farm stand. Use any combination of seasonal vegetables. This recipe is a favorite at our Farm Table Dinners and works "
+          },
+          "prepTime": "15 minutes",
+          "cookTime": "25 minutes",
+          "servings": "6",
+          "ingredients": [
+            "8 pasture-raised eggs",
+            "1/4 cup cream",
+            "1 medium onion, diced",
+            "2 cloves garlic, minced",
+            "2 cups chopped seasonal vegetables",
+            "1/2 cup grated Parmesan",
+            "2 tbsp fresh herbs (chives, thyme, or parsley)",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+          ],
+          "recipeCategory": [
+            {
+              "id": "Breakfast",
+              "name": "Breakfast"
+            }
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=800&q=80",
+            "alt": "Golden farm-fresh vegetable frittata in a cast iron skillet",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/recipes/honey-lavender-cake": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeRecipe",
+          "id": "recipe-honey-cake",
+          "title": "Honey Lavender Cake",
+          "path": "/recipes/honey-lavender-cake",
+          "body": {
+            "processed": "<p>This tender, fragrant cake showcases our raw wildflower honey paired with culinary lavender from the herb garden. It is a farm favorite that perfectly captures the flavors of a Willowbrook summer afternoon.</p><h2>Instructions</h2><ol><li>Preheat oven to 350 degrees F and butter a 9-inch round cake pan</li><li>Steep dried lavender buds in warm milk for 10 minutes, then strain</li><li>Cream butter and honey until light and fluffy</li><li>Add eggs one at a time, then vanilla extract</li><li>Combine flour, baking powder, and salt in a separate bowl</li><li>Alternately add dry ingredients and lavender-infused milk to the batter</li><li>Pour into prepared pan and bake for 30-35 minutes</li><li>Cool in pan for 10 minutes, then turn out onto a wire rack</li><li>Drizzle with a simple glaze of powdered sugar, honey, and lemon juice</li></ol>",
+            "summary": "This tender, fragrant cake showcases our raw wildflower honey paired with culinary lavender from the herb garden. It is a farm favorite that perfectly captures the flavors of a Willowbrook summer afte"
+          },
+          "prepTime": "20 minutes",
+          "cookTime": "35 minutes",
+          "servings": "8",
+          "ingredients": [
+            "1/2 cup raw wildflower honey",
+            "1/2 cup butter, softened",
+            "2 eggs",
+            "1 tsp vanilla extract",
+            "2 cups all-purpose flour",
+            "2 tsp baking powder",
+            "1/2 tsp salt",
+            "3/4 cup whole milk",
+            "1 tbsp dried culinary lavender",
+            "1 cup powdered sugar (for glaze)",
+            "1 tbsp lemon juice (for glaze)"
+          ],
+          "recipeCategory": [
+            {
+              "id": "Desserts",
+              "name": "Desserts"
+            }
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&q=80",
+            "alt": "Beautiful honey lavender cake with drizzled glaze",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/about": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodePage",
+          "id": "about-page",
+          "title": "About Willowbrook Farm",
+          "path": "/about",
+          "body": {
+            "processed": "<p>Willowbrook Farm has been in the Hartley family since 1928, when Thomas Hartley purchased 40 acres of farmland in the rolling hills of the countryside. Today, his great-grandchildren steward 150 acres of diversified farmland, continuing the family tradition of growing food with integrity and care.</p><h2>Our Values</h2><p>We believe in building healthy soil, supporting biodiversity, and providing our community with the freshest, most nutritious food possible. We are certified organic and practice regenerative agriculture techniques including cover cropping, crop rotation, composting, and minimal tillage.</p><h2>The Farm Today</h2><p>Under the leadership of Sarah and David Hartley, Willowbrook has diversified into a thriving direct-to-consumer operation. In addition to our farm stand and CSA program, we host educational events, farm tours, and the beloved seasonal festivals that bring our community together.</p>",
+            "summary": "Willowbrook Farm has been in the Hartley family since 1928, when Thomas Hartley purchased 40 acres of farmland in the rolling hills of the countryside. Today, his great-grandchildren steward 150 acres"
+          }
+        }
+      }
+    }
+  },
+  "/visit": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodePage",
+          "id": "visit-page",
+          "title": "Visit the Farm",
+          "path": "/visit",
+          "body": {
+            "processed": "<p>We love welcoming visitors to Willowbrook Farm. Whether you are shopping at the farm stand, joining a U-pick event, or just stopping by to see the animals, you are always welcome.</p><h2>Farm Stand Hours</h2><p>March - November: Wednesday through Sunday, 9:00 AM - 6:00 PM<br>December - February: Thursday through Saturday, 10:00 AM - 4:00 PM</p><h2>Location</h2><p>2847 Willowbrook Road<br>Hartley, VT 05647<br>30 minutes from Burlington, 15 minutes from Montpelier</p><h2>What to Bring</h2><ul><li>Comfortable, closed-toe shoes (it is a working farm!)</li><li>Reusable bags for farm stand purchases</li><li>Sunscreen and hats for sunny days</li><li>Your appetite - samples are always available at the stand</li></ul><h2>Farm Tours</h2><p>Guided farm tours are offered Saturdays at 10:00 AM from May through October. Tours are approximately 90 minutes and cover the vegetable fields, pastures, greenhouse, and bee yard. $10 per adult, children under 12 free. Reservations recommended.</p>",
+            "summary": "We love welcoming visitors to Willowbrook Farm. Whether you are shopping at the farm stand, joining a U-pick event, or just stopping by to see the animals, you are always welcome.Farm Stand HoursMarch"
+          }
+        }
+      }
+    }
+  }
+}

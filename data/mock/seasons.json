@@ -1,0 +1,228 @@
+{
+  "data": {
+    "nodeSeasons": {
+      "__typename": "NodeSeasonConnection",
+      "nodes": [
+        {
+          "__typename": "NodeSeason",
+          "id": "season-spring",
+          "title": "Spring on the Farm",
+          "path": "/seasons/spring",
+          "body": {
+            "processed": "<p>Spring is a time of renewal at Willowbrook Farm. As the frost recedes, we begin preparing our fields, starting seedlings in the greenhouse, and welcoming new lambs and chicks. Visitors can enjoy asparagus picking, greenhouse tours, and our popular Spring Open Farm Day.</p><h2>U-Pick Events</h2><p>Join us for U-pick strawberries beginning in late May. Bring the family, pick your own berries, and enjoy complimentary lemonade at the farm stand. Check our calendar for exact dates as they depend on weather conditions.</p>",
+            "summary": "Spring is a time of renewal at Willowbrook Farm. As the frost recedes, we begin preparing our fields, starting seedlings in the greenhouse, and welcoming new lambs and chicks. Visitors can enjoy aspar"
+          },
+          "startMonth": "March",
+          "endMonth": "May",
+          "whatsGrowing": [
+            "Asparagus",
+            "Lettuce",
+            "Spinach",
+            "Radishes",
+            "Peas",
+            "Strawberries",
+            "Spring onions",
+            "Rhubarb"
+          ],
+          "farmActivities": [
+            "U-pick strawberries",
+            "Greenhouse tours",
+            "Spring Open Farm Day",
+            "Baby animal visits",
+            "Planting workshops"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80",
+            "alt": "Spring fields with fresh green crops emerging",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeSeason",
+          "id": "season-summer",
+          "title": "Summer on the Farm",
+          "path": "/seasons/summer",
+          "body": {
+            "processed": "<p>Summer is harvest season at Willowbrook. Our fields are bursting with tomatoes, corn, peppers, melons, and berries. The farm stand is at its fullest, and our Saturday market days feature live music, cooking demos, and farm tours.</p><h2>Farm Dinners</h2><p>Join us for our popular Farm Table Dinner series, held on select Friday evenings in the barn. Local chefs prepare a multi-course meal using ingredients harvested that day. Seating is limited and reservations fill quickly.</p>",
+            "summary": "Summer is harvest season at Willowbrook. Our fields are bursting with tomatoes, corn, peppers, melons, and berries. The farm stand is at its fullest, and our Saturday market days feature live music, c"
+          },
+          "startMonth": "June",
+          "endMonth": "August",
+          "whatsGrowing": [
+            "Tomatoes",
+            "Sweet corn",
+            "Peppers",
+            "Cucumbers",
+            "Zucchini",
+            "Blueberries",
+            "Peaches",
+            "Beans",
+            "Melons",
+            "Basil"
+          ],
+          "farmActivities": [
+            "U-pick blueberries",
+            "Farm Table Dinner series",
+            "Saturday market days",
+            "Farm tours",
+            "Cooking demos"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=800&q=80",
+            "alt": "Lush summer farm field with rows of crops",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeSeason",
+          "id": "season-fall",
+          "title": "Fall on the Farm",
+          "path": "/seasons/fall",
+          "body": {
+            "processed": "<p>Fall is festival season at Willowbrook. Our pumpkin patch opens in late September, the apple orchard is ripe for picking, and our annual Harvest Festival draws families from across the region. The farm stand transitions to hearty root vegetables, winter squash, and preserved goods.</p><h2>Harvest Festival</h2><p>Our annual Harvest Festival is held the third weekend of October and features a corn maze, hayrides, pumpkin decorating, apple cider pressing, live music, and a farm-to-table lunch. It is our biggest event of the year and a beloved community tradition.</p>",
+            "summary": "Fall is festival season at Willowbrook. Our pumpkin patch opens in late September, the apple orchard is ripe for picking, and our annual Harvest Festival draws families from across the region. The far"
+          },
+          "startMonth": "September",
+          "endMonth": "November",
+          "whatsGrowing": [
+            "Pumpkins",
+            "Apples",
+            "Winter squash",
+            "Sweet potatoes",
+            "Kale",
+            "Brussels sprouts",
+            "Turnips",
+            "Beets"
+          ],
+          "farmActivities": [
+            "U-pick apples",
+            "Pumpkin patch",
+            "Corn maze",
+            "Annual Harvest Festival",
+            "Cider pressing",
+            "Hayrides"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=800&q=80",
+            "alt": "Autumn pumpkin patch with colorful fall foliage",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeSeason",
+          "id": "season-winter",
+          "title": "Winter on the Farm",
+          "path": "/seasons/winter",
+          "body": {
+            "processed": "<p>Winter is a quieter time at Willowbrook, but the farm stand stays open with stored root vegetables, preserved goods, frozen meats, and holiday gift boxes. Our greenhouse continues to produce greens, herbs, and microgreens throughout the cold months.</p><h2>Holiday Offerings</h2><p>Our holiday gift boxes make perfect presents, featuring farm honey, jams, maple syrup, beeswax candles, and dried herbs. We also sell fresh-cut Christmas trees and hand-made wreaths from our tree lot in December.</p>",
+            "summary": "Winter is a quieter time at Willowbrook, but the farm stand stays open with stored root vegetables, preserved goods, frozen meats, and holiday gift boxes. Our greenhouse continues to produce greens, h"
+          },
+          "startMonth": "December",
+          "endMonth": "February",
+          "whatsGrowing": [
+            "Greenhouse greens",
+            "Microgreens",
+            "Herbs",
+            "Stored root vegetables"
+          ],
+          "farmActivities": [
+            "Holiday gift boxes",
+            "Christmas tree lot",
+            "Wreath making workshops",
+            "Farm stand (limited hours)",
+            "Winter CSA shares"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1482517967863-00e15c9b44be?w=800&q=80",
+            "alt": "Snow-covered farm with red barn in winter",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1482517967863-00e15c9b44be?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1482517967863-00e15c9b44be?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1482517967863-00e15c9b44be?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

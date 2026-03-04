@@ -1,0 +1,177 @@
+{
+  "data": {
+    "nodeRecipes": {
+      "__typename": "NodeRecipeConnection",
+      "nodes": [
+        {
+          "__typename": "NodeRecipe",
+          "id": "recipe-caprese",
+          "title": "Heirloom Tomato Caprese Salad",
+          "path": "/recipes/heirloom-caprese-salad",
+          "body": {
+            "processed": "<p>This simple salad lets our stunning heirloom tomatoes shine. Use a variety of colors and shapes for a beautiful presentation. The key is using tomatoes at the peak of ripeness, the best olive oil you can find, and fresh basil picked moments before serving.</p><h2>Instructions</h2><ol><li>Slice tomatoes into 1/4-inch thick slices and arrange on a large platter</li><li>Tear fresh mozzarella into pieces and tuck between tomato slices</li><li>Scatter torn basil leaves over the top</li><li>Drizzle generously with extra-virgin olive oil</li><li>Sprinkle with flaky sea salt and freshly cracked black pepper</li><li>Finish with a drizzle of aged balsamic vinegar</li><li>Serve immediately at room temperature</li></ol>",
+            "summary": "This simple salad lets our stunning heirloom tomatoes shine. Use a variety of colors and shapes for a beautiful presentation. The key is using tomatoes at the peak of ripeness, the best olive oil you "
+          },
+          "prepTime": "10 minutes",
+          "cookTime": "None",
+          "servings": "4",
+          "ingredients": [
+            "3 large heirloom tomatoes (mixed varieties)",
+            "8 oz fresh mozzarella",
+            "1 bunch fresh basil",
+            "3 tbsp extra-virgin olive oil",
+            "1 tbsp aged balsamic vinegar",
+            "Flaky sea salt",
+            "Freshly cracked black pepper"
+          ],
+          "recipeCategory": [
+            {
+              "id": "Salads",
+              "name": "Salads"
+            }
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=800&q=80",
+            "alt": "Beautiful heirloom tomato caprese salad with fresh basil",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeRecipe",
+          "id": "recipe-farm-frittata",
+          "title": "Farm-Fresh Vegetable Frittata",
+          "path": "/recipes/farm-fresh-frittata",
+          "body": {
+            "processed": "<p>This versatile frittata is the perfect way to showcase whatever is fresh from the farm stand. Use any combination of seasonal vegetables. This recipe is a favorite at our Farm Table Dinners and works beautifully for breakfast, brunch, or a light dinner.</p><h2>Instructions</h2><ol><li>Preheat oven to 375 degrees F</li><li>Saute onion and garlic in olive oil in an oven-safe skillet until softened</li><li>Add chopped seasonal vegetables and cook until just tender, about 5 minutes</li><li>Whisk eggs with cream, salt, pepper, and herbs</li><li>Pour egg mixture over vegetables in the skillet</li><li>Sprinkle with grated cheese</li><li>Cook on stovetop over medium heat for 3 minutes until edges begin to set</li><li>Transfer to oven and bake for 15-18 minutes until golden and set in center</li><li>Let cool 5 minutes before slicing into wedges</li></ol>",
+            "summary": "This versatile frittata is the perfect way to showcase whatever is fresh from the farm stand. Use any combination of seasonal vegetables. This recipe is a favorite at our Farm Table Dinners and works "
+          },
+          "prepTime": "15 minutes",
+          "cookTime": "25 minutes",
+          "servings": "6",
+          "ingredients": [
+            "8 pasture-raised eggs",
+            "1/4 cup cream",
+            "1 medium onion, diced",
+            "2 cloves garlic, minced",
+            "2 cups chopped seasonal vegetables",
+            "1/2 cup grated Parmesan",
+            "2 tbsp fresh herbs (chives, thyme, or parsley)",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+          ],
+          "recipeCategory": [
+            {
+              "id": "Breakfast",
+              "name": "Breakfast"
+            }
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=800&q=80",
+            "alt": "Golden farm-fresh vegetable frittata in a cast iron skillet",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeRecipe",
+          "id": "recipe-honey-cake",
+          "title": "Honey Lavender Cake",
+          "path": "/recipes/honey-lavender-cake",
+          "body": {
+            "processed": "<p>This tender, fragrant cake showcases our raw wildflower honey paired with culinary lavender from the herb garden. It is a farm favorite that perfectly captures the flavors of a Willowbrook summer afternoon.</p><h2>Instructions</h2><ol><li>Preheat oven to 350 degrees F and butter a 9-inch round cake pan</li><li>Steep dried lavender buds in warm milk for 10 minutes, then strain</li><li>Cream butter and honey until light and fluffy</li><li>Add eggs one at a time, then vanilla extract</li><li>Combine flour, baking powder, and salt in a separate bowl</li><li>Alternately add dry ingredients and lavender-infused milk to the batter</li><li>Pour into prepared pan and bake for 30-35 minutes</li><li>Cool in pan for 10 minutes, then turn out onto a wire rack</li><li>Drizzle with a simple glaze of powdered sugar, honey, and lemon juice</li></ol>",
+            "summary": "This tender, fragrant cake showcases our raw wildflower honey paired with culinary lavender from the herb garden. It is a farm favorite that perfectly captures the flavors of a Willowbrook summer afte"
+          },
+          "prepTime": "20 minutes",
+          "cookTime": "35 minutes",
+          "servings": "8",
+          "ingredients": [
+            "1/2 cup raw wildflower honey",
+            "1/2 cup butter, softened",
+            "2 eggs",
+            "1 tsp vanilla extract",
+            "2 cups all-purpose flour",
+            "2 tsp baking powder",
+            "1/2 tsp salt",
+            "3/4 cup whole milk",
+            "1 tbsp dried culinary lavender",
+            "1 cup powdered sugar (for glaze)",
+            "1 tbsp lemon juice (for glaze)"
+          ],
+          "recipeCategory": [
+            {
+              "id": "Desserts",
+              "name": "Desserts"
+            }
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&q=80",
+            "alt": "Beautiful honey lavender cake with drizzled glaze",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

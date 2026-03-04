@@ -1,0 +1,519 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "Landing page with hero section, stats, and call-to-action areas for the farm",
+      "fields": [
+        {
+          "id": "hero_title",
+          "label": "Hero Title",
+          "type": "string",
+          "description": "Main headline in the hero section"
+        },
+        {
+          "id": "hero_subtitle",
+          "label": "Hero Subtitle",
+          "type": "string",
+          "description": "Secondary text below the hero title"
+        },
+        {
+          "id": "hero_description",
+          "label": "Hero Description",
+          "type": "text",
+          "description": "Longer descriptive text for the hero section"
+        },
+        {
+          "id": "stats_items",
+          "label": "Statistics",
+          "type": "paragraph(stat_item)[]",
+          "description": "Key statistics about the farm"
+        },
+        {
+          "id": "featured_items_title",
+          "label": "Featured Items Title",
+          "type": "string",
+          "description": "Title for the featured products section"
+        },
+        {
+          "id": "cta_title",
+          "label": "CTA Title",
+          "type": "string",
+          "description": "Call-to-action section title"
+        },
+        {
+          "id": "cta_description",
+          "label": "CTA Description",
+          "type": "text",
+          "description": "Call-to-action descriptive text"
+        },
+        {
+          "id": "cta_primary",
+          "label": "Primary CTA",
+          "type": "string",
+          "description": "Primary call-to-action button text"
+        },
+        {
+          "id": "cta_secondary",
+          "label": "Secondary CTA",
+          "type": "string",
+          "description": "Secondary call-to-action button text"
+        }
+      ]
+    },
+    {
+      "bundle": "product",
+      "label": "Product",
+      "description": "Farm product available for purchase or at farm stand",
+      "body": true,
+      "fields": [
+        {
+          "id": "product_category",
+          "label": "Category",
+          "type": "term(product_categories)[]",
+          "description": "Product category"
+        },
+        {
+          "id": "price",
+          "label": "Price",
+          "type": "string",
+          "description": "Product price"
+        },
+        {
+          "id": "unit",
+          "label": "Unit",
+          "type": "string",
+          "description": "Unit of sale (per lb, per dozen, etc.)"
+        },
+        {
+          "id": "available",
+          "label": "Currently Available",
+          "type": "bool",
+          "description": "Whether the product is currently in stock"
+        },
+        {
+          "id": "growing_method",
+          "label": "Growing Method",
+          "type": "string",
+          "description": "How the product is grown or raised"
+        },
+        {
+          "id": "image",
+          "label": "Product Image",
+          "type": "image",
+          "description": "Image of the product"
+        },
+        {
+          "id": "featured",
+          "label": "Featured",
+          "type": "bool",
+          "description": "Whether this product is featured"
+        }
+      ]
+    },
+    {
+      "bundle": "season",
+      "label": "Season",
+      "description": "Farm season with activities, availability, and what is growing",
+      "body": true,
+      "fields": [
+        {
+          "id": "start_month",
+          "label": "Start Month",
+          "type": "string",
+          "description": "When the season begins"
+        },
+        {
+          "id": "end_month",
+          "label": "End Month",
+          "type": "string",
+          "description": "When the season ends"
+        },
+        {
+          "id": "whats_growing",
+          "label": "What's Growing",
+          "type": "string[]",
+          "description": "Crops available during this season"
+        },
+        {
+          "id": "farm_activities",
+          "label": "Farm Activities",
+          "type": "string[]",
+          "description": "Activities available during this season"
+        },
+        {
+          "id": "image",
+          "label": "Season Image",
+          "type": "image",
+          "description": "Image representing this season on the farm"
+        }
+      ]
+    },
+    {
+      "bundle": "recipe",
+      "label": "Recipe",
+      "description": "Farm-to-table recipe featuring farm products",
+      "body": true,
+      "fields": [
+        {
+          "id": "prep_time",
+          "label": "Prep Time",
+          "type": "string",
+          "description": "Preparation time"
+        },
+        {
+          "id": "cook_time",
+          "label": "Cook Time",
+          "type": "string",
+          "description": "Cooking time"
+        },
+        {
+          "id": "servings",
+          "label": "Servings",
+          "type": "string",
+          "description": "Number of servings"
+        },
+        {
+          "id": "ingredients",
+          "label": "Ingredients",
+          "type": "string[]",
+          "description": "List of ingredients"
+        },
+        {
+          "id": "recipe_category",
+          "label": "Category",
+          "type": "term(recipe_categories)[]",
+          "description": "Recipe category"
+        },
+        {
+          "id": "image",
+          "label": "Recipe Image",
+          "type": "image",
+          "description": "Image of the finished dish"
+        }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages for about, visit, policies, etc.",
+      "body": true,
+      "fields": []
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stat_item",
+      "label": "Statistic Item",
+      "description": "A single statistic with number and label",
+      "fields": [
+        {
+          "id": "number",
+          "label": "Number",
+          "type": "string!",
+          "description": "The statistic number or value (required)"
+        },
+        {
+          "id": "label",
+          "label": "Label",
+          "type": "string!",
+          "description": "Description label for the statistic (required)"
+        }
+      ]
+    }
+  ],
+  "taxonomies": [
+    {
+      "vocabulary": "product_categories",
+      "label": "Product Categories",
+      "terms": ["Vegetables", "Fruits", "Eggs & Dairy", "Meat & Poultry", "Honey & Preserves", "Herbs", "Flowers"]
+    },
+    {
+      "vocabulary": "recipe_categories",
+      "label": "Recipe Categories",
+      "terms": ["Breakfast", "Salads", "Main Course", "Sides", "Desserts", "Preserving", "Beverages"]
+    }
+  ],
+  "content": [
+    {
+      "id": "stat-acres",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "150",
+        "label": "Acres Farmed"
+      }
+    },
+    {
+      "id": "stat-crops",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "60+",
+        "label": "Crop Varieties"
+      }
+    },
+    {
+      "id": "stat-years",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "4",
+        "label": "Generations"
+      }
+    },
+    {
+      "id": "stat-families",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "500+",
+        "label": "Families Served Weekly"
+      }
+    },
+    {
+      "id": "homepage",
+      "type": "node.homepage",
+      "path": "/homepage",
+      "values": {
+        "title": "Willowbrook Farm",
+        "hero_title": "Grown with Care, Shared with Love",
+        "hero_subtitle": "Willowbrook Farm",
+        "hero_description": "<p>For four generations, the Hartley family has been cultivating 150 acres of rich farmland using sustainable practices. Visit our farm stand, join a seasonal U-pick event, or have fresh produce delivered to your door through our CSA program.</p>",
+        "stats_items": [
+          "@stat-acres",
+          "@stat-crops",
+          "@stat-years",
+          "@stat-families"
+        ],
+        "featured_items_title": "From Our Fields",
+        "cta_title": "Visit the Farm",
+        "cta_description": "<p>Our farm stand is open year-round with the freshest seasonal produce, farm-raised meats, eggs, and artisan goods. Join our CSA program for weekly deliveries of the best the farm has to offer.</p>",
+        "cta_primary": "Shop Farm Stand",
+        "cta_secondary": "Join Our CSA"
+      }
+    },
+    {
+      "id": "product-heirloom-tomatoes",
+      "type": "node.product",
+      "path": "/products/heirloom-tomatoes",
+      "values": {
+        "title": "Heirloom Tomatoes",
+        "body": "<p>Our heirloom tomatoes are the pride of Willowbrook Farm. We grow over 20 varieties including Brandywine, Cherokee Purple, Green Zebra, and Black Krim. Each variety is chosen for exceptional flavor and grown using organic methods in our rich, compost-amended soil.</p><h2>Growing Practices</h2><p>Our tomatoes are started from saved seed in our greenhouse in March, transplanted to the fields in May, and hand-harvested at peak ripeness from July through October. We use companion planting and integrated pest management to keep our crops healthy without synthetic chemicals.</p>",
+        "product_category": ["Vegetables"],
+        "price": "$4.50",
+        "unit": "per pound",
+        "available": true,
+        "growing_method": "Certified Organic",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=800&q=80",
+          "alt": "Colorful heirloom tomatoes in a basket",
+          "title": "Heirloom Tomatoes"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "product-pasture-eggs",
+      "type": "node.product",
+      "path": "/products/pasture-raised-eggs",
+      "values": {
+        "title": "Pasture-Raised Eggs",
+        "body": "<p>Our hens roam freely across lush pastures, foraging for insects, seeds, and grasses that give their eggs rich, golden yolks and exceptional flavor. We raise a mix of heritage breeds including Rhode Island Reds, Buff Orpingtons, and Ameraucanas, producing eggs in shades of brown, cream, and blue.</p><h2>Our Flock</h2><p>We maintain a flock of approximately 200 hens that are rotated to fresh pasture regularly. The birds have access to clean water, supplemental organic feed, and comfortable coops for nighttime roosting. We never use antibiotics or hormones.</p>",
+        "product_category": ["Eggs & Dairy"],
+        "price": "$7.00",
+        "unit": "per dozen",
+        "available": true,
+        "growing_method": "Pasture-Raised, No Antibiotics",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?w=800&q=80",
+          "alt": "Basket of fresh pasture-raised eggs in various colors",
+          "title": "Pasture-Raised Eggs"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "product-raw-honey",
+      "type": "node.product",
+      "path": "/products/raw-honey",
+      "values": {
+        "title": "Raw Wildflower Honey",
+        "body": "<p>Our bees forage on the wildflowers, clover, and fruit blossoms across our farm and the surrounding countryside, producing a rich, complex honey that changes character with the seasons. Spring honey is light and floral, while fall honey is darker with notes of goldenrod and aster.</p><h2>Our Apiaries</h2><p>We maintain 30 hives across the farm, positioned near different flowering areas. Our beekeeper, Tom Hartley, practices natural beekeeping methods and never treats the hives with synthetic chemicals. The honey is strained but never heated, preserving all its natural enzymes and benefits.</p>",
+        "product_category": ["Honey & Preserves"],
+        "price": "$12.00",
+        "unit": "per 16 oz jar",
+        "available": true,
+        "growing_method": "Raw, Unprocessed",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80",
+          "alt": "Jar of golden raw honey with honeycomb",
+          "title": "Raw Wildflower Honey"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "product-grass-fed-beef",
+      "type": "node.product",
+      "path": "/products/grass-fed-beef",
+      "values": {
+        "title": "Grass-Fed Beef",
+        "body": "<p>Our small herd of Angus cattle is raised entirely on pasture, grazing on the diverse grasses and legumes that grow across our hillside fields. The beef is dry-aged for 21 days for superior tenderness and flavor. We offer individual cuts and quarter, half, and whole beef shares.</p><h2>Raising Practices</h2><p>Our cattle are born and raised on the farm, spending their entire lives on pasture. They are never given growth hormones or routine antibiotics. We work with a local USDA-inspected processor to ensure the highest quality cuts.</p>",
+        "product_category": ["Meat & Poultry"],
+        "price": "$8.50",
+        "unit": "per pound (ground beef)",
+        "available": true,
+        "growing_method": "100% Grass-Fed, No Hormones",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800&q=80",
+          "alt": "Grass-fed cattle grazing on green pasture",
+          "title": "Grass-Fed Beef"
+        },
+        "featured": false
+      }
+    },
+    {
+      "id": "season-spring",
+      "type": "node.season",
+      "path": "/seasons/spring",
+      "values": {
+        "title": "Spring on the Farm",
+        "body": "<p>Spring is a time of renewal at Willowbrook Farm. As the frost recedes, we begin preparing our fields, starting seedlings in the greenhouse, and welcoming new lambs and chicks. Visitors can enjoy asparagus picking, greenhouse tours, and our popular Spring Open Farm Day.</p><h2>U-Pick Events</h2><p>Join us for U-pick strawberries beginning in late May. Bring the family, pick your own berries, and enjoy complimentary lemonade at the farm stand. Check our calendar for exact dates as they depend on weather conditions.</p>",
+        "start_month": "March",
+        "end_month": "May",
+        "whats_growing": ["Asparagus", "Lettuce", "Spinach", "Radishes", "Peas", "Strawberries", "Spring onions", "Rhubarb"],
+        "farm_activities": ["U-pick strawberries", "Greenhouse tours", "Spring Open Farm Day", "Baby animal visits", "Planting workshops"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80",
+          "alt": "Spring fields with fresh green crops emerging",
+          "title": "Spring on the Farm"
+        }
+      }
+    },
+    {
+      "id": "season-summer",
+      "type": "node.season",
+      "path": "/seasons/summer",
+      "values": {
+        "title": "Summer on the Farm",
+        "body": "<p>Summer is harvest season at Willowbrook. Our fields are bursting with tomatoes, corn, peppers, melons, and berries. The farm stand is at its fullest, and our Saturday market days feature live music, cooking demos, and farm tours.</p><h2>Farm Dinners</h2><p>Join us for our popular Farm Table Dinner series, held on select Friday evenings in the barn. Local chefs prepare a multi-course meal using ingredients harvested that day. Seating is limited and reservations fill quickly.</p>",
+        "start_month": "June",
+        "end_month": "August",
+        "whats_growing": ["Tomatoes", "Sweet corn", "Peppers", "Cucumbers", "Zucchini", "Blueberries", "Peaches", "Beans", "Melons", "Basil"],
+        "farm_activities": ["U-pick blueberries", "Farm Table Dinner series", "Saturday market days", "Farm tours", "Cooking demos"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=800&q=80",
+          "alt": "Lush summer farm field with rows of crops",
+          "title": "Summer on the Farm"
+        }
+      }
+    },
+    {
+      "id": "season-fall",
+      "type": "node.season",
+      "path": "/seasons/fall",
+      "values": {
+        "title": "Fall on the Farm",
+        "body": "<p>Fall is festival season at Willowbrook. Our pumpkin patch opens in late September, the apple orchard is ripe for picking, and our annual Harvest Festival draws families from across the region. The farm stand transitions to hearty root vegetables, winter squash, and preserved goods.</p><h2>Harvest Festival</h2><p>Our annual Harvest Festival is held the third weekend of October and features a corn maze, hayrides, pumpkin decorating, apple cider pressing, live music, and a farm-to-table lunch. It is our biggest event of the year and a beloved community tradition.</p>",
+        "start_month": "September",
+        "end_month": "November",
+        "whats_growing": ["Pumpkins", "Apples", "Winter squash", "Sweet potatoes", "Kale", "Brussels sprouts", "Turnips", "Beets"],
+        "farm_activities": ["U-pick apples", "Pumpkin patch", "Corn maze", "Annual Harvest Festival", "Cider pressing", "Hayrides"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=800&q=80",
+          "alt": "Autumn pumpkin patch with colorful fall foliage",
+          "title": "Fall on the Farm"
+        }
+      }
+    },
+    {
+      "id": "season-winter",
+      "type": "node.season",
+      "path": "/seasons/winter",
+      "values": {
+        "title": "Winter on the Farm",
+        "body": "<p>Winter is a quieter time at Willowbrook, but the farm stand stays open with stored root vegetables, preserved goods, frozen meats, and holiday gift boxes. Our greenhouse continues to produce greens, herbs, and microgreens throughout the cold months.</p><h2>Holiday Offerings</h2><p>Our holiday gift boxes make perfect presents, featuring farm honey, jams, maple syrup, beeswax candles, and dried herbs. We also sell fresh-cut Christmas trees and hand-made wreaths from our tree lot in December.</p>",
+        "start_month": "December",
+        "end_month": "February",
+        "whats_growing": ["Greenhouse greens", "Microgreens", "Herbs", "Stored root vegetables"],
+        "farm_activities": ["Holiday gift boxes", "Christmas tree lot", "Wreath making workshops", "Farm stand (limited hours)", "Winter CSA shares"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1482517967863-00e15c9b44be?w=800&q=80",
+          "alt": "Snow-covered farm with red barn in winter",
+          "title": "Winter on the Farm"
+        }
+      }
+    },
+    {
+      "id": "recipe-caprese",
+      "type": "node.recipe",
+      "path": "/recipes/heirloom-caprese-salad",
+      "values": {
+        "title": "Heirloom Tomato Caprese Salad",
+        "body": "<p>This simple salad lets our stunning heirloom tomatoes shine. Use a variety of colors and shapes for a beautiful presentation. The key is using tomatoes at the peak of ripeness, the best olive oil you can find, and fresh basil picked moments before serving.</p><h2>Instructions</h2><ol><li>Slice tomatoes into 1/4-inch thick slices and arrange on a large platter</li><li>Tear fresh mozzarella into pieces and tuck between tomato slices</li><li>Scatter torn basil leaves over the top</li><li>Drizzle generously with extra-virgin olive oil</li><li>Sprinkle with flaky sea salt and freshly cracked black pepper</li><li>Finish with a drizzle of aged balsamic vinegar</li><li>Serve immediately at room temperature</li></ol>",
+        "prep_time": "10 minutes",
+        "cook_time": "None",
+        "servings": "4",
+        "ingredients": ["3 large heirloom tomatoes (mixed varieties)", "8 oz fresh mozzarella", "1 bunch fresh basil", "3 tbsp extra-virgin olive oil", "1 tbsp aged balsamic vinegar", "Flaky sea salt", "Freshly cracked black pepper"],
+        "recipe_category": ["Salads"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=800&q=80",
+          "alt": "Beautiful heirloom tomato caprese salad with fresh basil",
+          "title": "Heirloom Caprese Salad"
+        }
+      }
+    },
+    {
+      "id": "recipe-farm-frittata",
+      "type": "node.recipe",
+      "path": "/recipes/farm-fresh-frittata",
+      "values": {
+        "title": "Farm-Fresh Vegetable Frittata",
+        "body": "<p>This versatile frittata is the perfect way to showcase whatever is fresh from the farm stand. Use any combination of seasonal vegetables. This recipe is a favorite at our Farm Table Dinners and works beautifully for breakfast, brunch, or a light dinner.</p><h2>Instructions</h2><ol><li>Preheat oven to 375 degrees F</li><li>Saute onion and garlic in olive oil in an oven-safe skillet until softened</li><li>Add chopped seasonal vegetables and cook until just tender, about 5 minutes</li><li>Whisk eggs with cream, salt, pepper, and herbs</li><li>Pour egg mixture over vegetables in the skillet</li><li>Sprinkle with grated cheese</li><li>Cook on stovetop over medium heat for 3 minutes until edges begin to set</li><li>Transfer to oven and bake for 15-18 minutes until golden and set in center</li><li>Let cool 5 minutes before slicing into wedges</li></ol>",
+        "prep_time": "15 minutes",
+        "cook_time": "25 minutes",
+        "servings": "6",
+        "ingredients": ["8 pasture-raised eggs", "1/4 cup cream", "1 medium onion, diced", "2 cloves garlic, minced", "2 cups chopped seasonal vegetables", "1/2 cup grated Parmesan", "2 tbsp fresh herbs (chives, thyme, or parsley)", "2 tbsp olive oil", "Salt and pepper to taste"],
+        "recipe_category": ["Breakfast"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=800&q=80",
+          "alt": "Golden farm-fresh vegetable frittata in a cast iron skillet",
+          "title": "Farm-Fresh Frittata"
+        }
+      }
+    },
+    {
+      "id": "recipe-honey-cake",
+      "type": "node.recipe",
+      "path": "/recipes/honey-lavender-cake",
+      "values": {
+        "title": "Honey Lavender Cake",
+        "body": "<p>This tender, fragrant cake showcases our raw wildflower honey paired with culinary lavender from the herb garden. It is a farm favorite that perfectly captures the flavors of a Willowbrook summer afternoon.</p><h2>Instructions</h2><ol><li>Preheat oven to 350 degrees F and butter a 9-inch round cake pan</li><li>Steep dried lavender buds in warm milk for 10 minutes, then strain</li><li>Cream butter and honey until light and fluffy</li><li>Add eggs one at a time, then vanilla extract</li><li>Combine flour, baking powder, and salt in a separate bowl</li><li>Alternately add dry ingredients and lavender-infused milk to the batter</li><li>Pour into prepared pan and bake for 30-35 minutes</li><li>Cool in pan for 10 minutes, then turn out onto a wire rack</li><li>Drizzle with a simple glaze of powdered sugar, honey, and lemon juice</li></ol>",
+        "prep_time": "20 minutes",
+        "cook_time": "35 minutes",
+        "servings": "8",
+        "ingredients": ["1/2 cup raw wildflower honey", "1/2 cup butter, softened", "2 eggs", "1 tsp vanilla extract", "2 cups all-purpose flour", "2 tsp baking powder", "1/2 tsp salt", "3/4 cup whole milk", "1 tbsp dried culinary lavender", "1 cup powdered sugar (for glaze)", "1 tbsp lemon juice (for glaze)"],
+        "recipe_category": ["Desserts"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&q=80",
+          "alt": "Beautiful honey lavender cake with drizzled glaze",
+          "title": "Honey Lavender Cake"
+        }
+      }
+    },
+    {
+      "id": "about-page",
+      "type": "node.page",
+      "path": "/about",
+      "values": {
+        "title": "About Willowbrook Farm",
+        "body": "<p>Willowbrook Farm has been in the Hartley family since 1928, when Thomas Hartley purchased 40 acres of farmland in the rolling hills of the countryside. Today, his great-grandchildren steward 150 acres of diversified farmland, continuing the family tradition of growing food with integrity and care.</p><h2>Our Values</h2><p>We believe in building healthy soil, supporting biodiversity, and providing our community with the freshest, most nutritious food possible. We are certified organic and practice regenerative agriculture techniques including cover cropping, crop rotation, composting, and minimal tillage.</p><h2>The Farm Today</h2><p>Under the leadership of Sarah and David Hartley, Willowbrook has diversified into a thriving direct-to-consumer operation. In addition to our farm stand and CSA program, we host educational events, farm tours, and the beloved seasonal festivals that bring our community together.</p>"
+      }
+    },
+    {
+      "id": "visit-page",
+      "type": "node.page",
+      "path": "/visit",
+      "values": {
+        "title": "Visit the Farm",
+        "body": "<p>We love welcoming visitors to Willowbrook Farm. Whether you are shopping at the farm stand, joining a U-pick event, or just stopping by to see the animals, you are always welcome.</p><h2>Farm Stand Hours</h2><p>March - November: Wednesday through Sunday, 9:00 AM - 6:00 PM<br>December - February: Thursday through Saturday, 10:00 AM - 4:00 PM</p><h2>Location</h2><p>2847 Willowbrook Road<br>Hartley, VT 05647<br>30 minutes from Burlington, 15 minutes from Montpelier</p><h2>What to Bring</h2><ul><li>Comfortable, closed-toe shoes (it is a working farm!)</li><li>Reusable bags for farm stand purchases</li><li>Sunscreen and hats for sunny days</li><li>Your appetite - samples are always available at the stand</li></ul><h2>Farm Tours</h2><p>Guided farm tours are offered Saturdays at 10:00 AM from May through October. Tours are approximately 90 minutes and cover the vegetable fields, pastures, greenhouse, and bee yard. $10 per adult, children under 12 free. Reservations recommended.</p>"
+      }
+    }
+  ]
+}

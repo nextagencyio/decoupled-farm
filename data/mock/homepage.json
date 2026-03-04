@@ -1,0 +1,59 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Willowbrook Farm",
+          "path": "/homepage",
+          "heroTitle": "Grown with Care, Shared with Love",
+          "heroSubtitle": "Willowbrook Farm",
+          "heroDescription": {
+            "processed": "<p>For four generations, the Hartley family has been cultivating 150 acres of rich farmland using sustainable practices. Visit our farm stand, join a seasonal U-pick event, or have fresh produce delivered to your door through our CSA program.</p>",
+            "summary": "For four generations, the Hartley family has been cultivating 150 acres of rich farmland using sustainable practices. Visit our farm stand, join a seasonal U-pick event, or have fresh produce delivere"
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-acres",
+              "title": "",
+              "number": "150",
+              "label": "Acres Farmed"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-crops",
+              "title": "",
+              "number": "60+",
+              "label": "Crop Varieties"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-years",
+              "title": "",
+              "number": "4",
+              "label": "Generations"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-families",
+              "title": "",
+              "number": "500+",
+              "label": "Families Served Weekly"
+            }
+          ],
+          "featuredItemsTitle": "From Our Fields",
+          "ctaTitle": "Visit the Farm",
+          "ctaDescription": {
+            "processed": "<p>Our farm stand is open year-round with the freshest seasonal produce, farm-raised meats, eggs, and artisan goods. Join our CSA program for weekly deliveries of the best the farm has to offer.</p>",
+            "summary": "Our farm stand is open year-round with the freshest seasonal produce, farm-raised meats, eggs, and artisan goods. Join our CSA program for weekly deliveries of the best the farm has to offer."
+          },
+          "ctaPrimary": "Shop Farm Stand",
+          "ctaSecondary": "Join Our CSA"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "data": {
+    "nodeProducts": {
+      "__typename": "NodeProductConnection",
+      "nodes": [
+        {
+          "__typename": "NodeProduct",
+          "id": "product-heirloom-tomatoes",
+          "title": "Heirloom Tomatoes",
+          "path": "/products/heirloom-tomatoes",
+          "body": {
+            "processed": "<p>Our heirloom tomatoes are the pride of Willowbrook Farm. We grow over 20 varieties including Brandywine, Cherokee Purple, Green Zebra, and Black Krim. Each variety is chosen for exceptional flavor and grown using organic methods in our rich, compost-amended soil.</p><h2>Growing Practices</h2><p>Our tomatoes are started from saved seed in our greenhouse in March, transplanted to the fields in May, and hand-harvested at peak ripeness from July through October. We use companion planting and integrated pest management to keep our crops healthy without synthetic chemicals.</p>",
+            "summary": "Our heirloom tomatoes are the pride of Willowbrook Farm. We grow over 20 varieties including Brandywine, Cherokee Purple, Green Zebra, and Black Krim. Each variety is chosen for exceptional flavor and"
+          },
+          "productCategory": [
+            {
+              "id": "Vegetables",
+              "name": "Vegetables"
+            }
+          ],
+          "price": "$4.50",
+          "unit": "per pound",
+          "available": true,
+          "growingMethod": "Certified Organic",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=800&q=80",
+            "alt": "Colorful heirloom tomatoes in a basket",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        },
+        {
+          "__typename": "NodeProduct",
+          "id": "product-pasture-eggs",
+          "title": "Pasture-Raised Eggs",
+          "path": "/products/pasture-raised-eggs",
+          "body": {
+            "processed": "<p>Our hens roam freely across lush pastures, foraging for insects, seeds, and grasses that give their eggs rich, golden yolks and exceptional flavor. We raise a mix of heritage breeds including Rhode Island Reds, Buff Orpingtons, and Ameraucanas, producing eggs in shades of brown, cream, and blue.</p><h2>Our Flock</h2><p>We maintain a flock of approximately 200 hens that are rotated to fresh pasture regularly. The birds have access to clean water, supplemental organic feed, and comfortable coops for nighttime roosting. We never use antibiotics or hormones.</p>",
+            "summary": "Our hens roam freely across lush pastures, foraging for insects, seeds, and grasses that give their eggs rich, golden yolks and exceptional flavor. We raise a mix of heritage breeds including Rhode Is"
+          },
+          "productCategory": [
+            {
+              "id": "Eggs & Dairy",
+              "name": "Eggs & Dairy"
+            }
+          ],
+          "price": "$7.00",
+          "unit": "per dozen",
+          "available": true,
+          "growingMethod": "Pasture-Raised, No Antibiotics",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?w=800&q=80",
+            "alt": "Basket of fresh pasture-raised eggs in various colors",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        },
+        {
+          "__typename": "NodeProduct",
+          "id": "product-raw-honey",
+          "title": "Raw Wildflower Honey",
+          "path": "/products/raw-honey",
+          "body": {
+            "processed": "<p>Our bees forage on the wildflowers, clover, and fruit blossoms across our farm and the surrounding countryside, producing a rich, complex honey that changes character with the seasons. Spring honey is light and floral, while fall honey is darker with notes of goldenrod and aster.</p><h2>Our Apiaries</h2><p>We maintain 30 hives across the farm, positioned near different flowering areas. Our beekeeper, Tom Hartley, practices natural beekeeping methods and never treats the hives with synthetic chemicals. The honey is strained but never heated, preserving all its natural enzymes and benefits.</p>",
+            "summary": "Our bees forage on the wildflowers, clover, and fruit blossoms across our farm and the surrounding countryside, producing a rich, complex honey that changes character with the seasons. Spring honey is"
+          },
+          "productCategory": [
+            {
+              "id": "Honey & Preserves",
+              "name": "Honey & Preserves"
+            }
+          ],
+          "price": "$12.00",
+          "unit": "per 16 oz jar",
+          "available": true,
+          "growingMethod": "Raw, Unprocessed",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80",
+            "alt": "Jar of golden raw honey with honeycomb",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        },
+        {
+          "__typename": "NodeProduct",
+          "id": "product-grass-fed-beef",
+          "title": "Grass-Fed Beef",
+          "path": "/products/grass-fed-beef",
+          "body": {
+            "processed": "<p>Our small herd of Angus cattle is raised entirely on pasture, grazing on the diverse grasses and legumes that grow across our hillside fields. The beef is dry-aged for 21 days for superior tenderness and flavor. We offer individual cuts and quarter, half, and whole beef shares.</p><h2>Raising Practices</h2><p>Our cattle are born and raised on the farm, spending their entire lives on pasture. They are never given growth hormones or routine antibiotics. We work with a local USDA-inspected processor to ensure the highest quality cuts.</p>",
+            "summary": "Our small herd of Angus cattle is raised entirely on pasture, grazing on the diverse grasses and legumes that grow across our hillside fields. The beef is dry-aged for 21 days for superior tenderness "
+          },
+          "productCategory": [
+            {
+              "id": "Meat & Poultry",
+              "name": "Meat & Poultry"
+            }
+          ],
+          "price": "$8.50",
+          "unit": "per pound (ground beef)",
+          "available": true,
+          "growingMethod": "100% Grass-Fed, No Hormones",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800&q=80",
+            "alt": "Grass-fed cattle grazing on green pasture",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": false
+        }
+      ]
+    }
+  }
+}
