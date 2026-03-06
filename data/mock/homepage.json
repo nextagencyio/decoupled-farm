@@ -19,28 +19,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-acres",
               "title": "",
-              "number": "150",
+              "number": "150", "value": "150",
               "label": "Acres Farmed"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-crops",
               "title": "",
-              "number": "60+",
+              "number": "60+", "value": "60+",
               "label": "Crop Varieties"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-years",
               "title": "",
-              "number": "4",
+              "number": "4", "value": "4",
               "label": "Generations"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-families",
               "title": "",
-              "number": "500+",
+              "number": "500+", "value": "500+",
               "label": "Families Served Weekly"
             }
           ],
