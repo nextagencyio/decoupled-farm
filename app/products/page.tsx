@@ -8,6 +8,7 @@ import ProductCard from '../components/ProductCard'
 import { Leaf } from 'lucide-react'
 
 export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Farm Products | Sunstone Family Farm',

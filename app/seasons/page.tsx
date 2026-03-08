@@ -8,6 +8,7 @@ import SeasonCard from '../components/SeasonCard'
 import { Sun } from 'lucide-react'
 
 export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Seasonal Guide | Sunstone Family Farm',
