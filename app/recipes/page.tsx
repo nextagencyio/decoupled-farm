@@ -1,6 +1,5 @@
+import { getClient } from '@/lib/drupal-client'
 import { Metadata } from 'next'
-import { headers } from 'next/headers'
-import { getServerApolloClient } from '@/lib/apollo-client'
 import { GET_RECIPES } from '@/lib/queries'
 import { RecipesData } from '@/lib/types'
 import Header from '../components/Header'
@@ -17,13 +16,8 @@ export const metadata: Metadata = {
 
 async function getRecipes() {
   try {
-    const requestHeaders = await headers()
-    const apolloClient = getServerApolloClient(requestHeaders)
-    const { data } = await apolloClient.query<RecipesData>({
-      query: GET_RECIPES,
-      variables: { first: 50 },
-      fetchPolicy: 'cache-first',
-    })
+    const client = getClient()
+    const { data } = await client.raw(GET_RECIPES, { first: 50 })
     return data?.nodeRecipes?.nodes || []
   } catch (error) {
     console.error('Error fetching recipes:', error)
