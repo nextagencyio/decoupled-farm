@@ -1,78 +1,6 @@
 // Tagged template that returns the query string
 const gql = (strings: TemplateStringsArray, ...values: any[]) => strings.reduce((a, s, i) => a + s + (values[i] || ''), '')
 
-export const GET_ARTICLE_TEASERS = gql`
-  query GetArticleTeasers($first: Int = 10) {
-    nodeArticles(first: $first, sortKey: CREATED_AT) {
-      nodes {
-        id
-        title
-        path
-        created {
-          timestamp
-        }
-        changed {
-          timestamp
-        }
-        ... on NodeArticle {
-          body {
-            processed
-            summary
-          }
-          image {
-            url
-            alt
-            width
-            height
-            variations(styles: [LARGE, MEDIUM, THUMBNAIL]) {
-              name
-              url
-              width
-              height
-            }
-          }
-        }
-      }
-    }
-  }
-`
-
-export const GET_ARTICLE_BY_PATH = gql`
-  query GetArticleByPath($path: String!) {
-    route(path: $path) {
-      ... on RouteInternal {
-        entity {
-          ... on NodeArticle {
-            id
-            title
-            body {
-              processed
-            }
-            created {
-              timestamp
-            }
-            changed {
-              timestamp
-            }
-            image {
-              url
-              alt
-              width
-              height
-              variations(styles: [LARGE, MEDIUM, THUMBNAIL]) {
-                name
-                url
-                width
-                height
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`
-
 export const GET_HOMEPAGE_DATA = gql`
   query GetHomepageData {
     nodeHomepages(first: 1) {
@@ -82,11 +10,17 @@ export const GET_HOMEPAGE_DATA = gql`
         path
         heroTitle
         heroSubtitle
-        heroDescription { processed summary }
-        statsItems { ... on ParagraphStatItem { id title description { processed } icon } }
+        heroDescription { processed }
+        statsItems {
+          ... on ParagraphStatItem {
+            id
+            number
+            label
+          }
+        }
         featuredItemsTitle
         ctaTitle
-        ctaDescription { processed summary }
+        ctaDescription { processed }
         ctaPrimary
         ctaSecondary
       }
@@ -100,61 +34,75 @@ export const GET_NODE_BY_PATH = gql`
       ... on RouteInternal {
         entity {
           ... on NodePage {
+            __typename
             id
             title
+            path
             body {
               processed
             }
           }
-          ... on NodeArticle {
+          ... on NodeProduct {
+            __typename
             id
             title
-            body {
-              processed
+            path
+            body { processed }
+            productCategory {
+              ... on TermProductCategory { name }
             }
-            created {
-              timestamp
+            price
+            unit
+            available
+            growingMethod
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            featured
+          }
+          ... on NodeSeason {
+            __typename
+            id
+            title
+            path
+            body { processed }
+            startMonth
+            endMonth
+            whatsGrowing
+            farmActivities
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+          }
+          ... on NodeRecipe {
+            __typename
+            id
+            title
+            path
+            body { processed }
+            prepTime
+            cookTime
+            servings
+            ingredients
+            recipeCategory {
+              ... on TermRecipeCategory { name }
             }
-            changed {
-              timestamp
-            }
-            image {
-              url
-              alt
-              width
-              height
-              variations(styles: [LARGE, MEDIUM, THUMBNAIL]) {
-                name
-                url
-                width
-                height
-              }
-            }
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
           }
           ... on NodeHomepage {
+            __typename
             id
             title
+            path
             heroTitle
             heroSubtitle
-            heroDescription {
-              processed
-            }
-            featuresTitle
-            featuresSubtitle
-            featuresItems {
-              ... on ParagraphFeatureItem {
+            heroDescription { processed }
+            statsItems {
+              ... on ParagraphStatItem {
                 id
-                title
-                description {
-                  processed
-                }
-                icon
+                number
+                label
               }
             }
+            featuredItemsTitle
             ctaTitle
-            ctaDescription {
-              processed
-            }
+            ctaDescription { processed }
             ctaPrimary
             ctaSecondary
           }
@@ -174,7 +122,9 @@ export const GET_PRODUCTS = gql`
         created { timestamp }
         ... on NodeProduct {
           body { processed summary }
-          productCategory
+          productCategory {
+            ... on TermProductCategory { name }
+          }
           price
           unit
           available
@@ -196,14 +146,16 @@ export const GET_PRODUCT_BY_PATH = gql`
             id
             title
             path
-          body { processed summary }
-          productCategory
-          price
-          unit
-          available
-          growingMethod
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
-          featured
+            body { processed summary }
+            productCategory {
+              ... on TermProductCategory { name }
+            }
+            price
+            unit
+            available
+            growingMethod
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            featured
           }
         }
       }
@@ -241,12 +193,12 @@ export const GET_SEASON_BY_PATH = gql`
             id
             title
             path
-          body { processed summary }
-          startMonth
-          endMonth
-          whatsGrowing
-          farmActivities
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            body { processed summary }
+            startMonth
+            endMonth
+            whatsGrowing
+            farmActivities
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
           }
         }
       }
@@ -268,7 +220,9 @@ export const GET_RECIPES = gql`
           cookTime
           servings
           ingredients
-          recipeCategory
+          recipeCategory {
+            ... on TermRecipeCategory { name }
+          }
           image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
         }
       }
@@ -285,13 +239,15 @@ export const GET_RECIPE_BY_PATH = gql`
             id
             title
             path
-          body { processed summary }
-          prepTime
-          cookTime
-          servings
-          ingredients
-          recipeCategory
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            body { processed summary }
+            prepTime
+            cookTime
+            servings
+            ingredients
+            recipeCategory {
+              ... on TermRecipeCategory { name }
+            }
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
           }
         }
       }

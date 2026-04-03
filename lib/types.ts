@@ -57,15 +57,20 @@ export interface DrupalPage extends DrupalNode {
   }
 }
 
+export interface DrupalStatItem {
+  id: string
+  number?: string
+  label?: string
+}
+
 export interface DrupalHomepage extends DrupalNode {
   heroTitle?: string
   heroSubtitle?: string
   heroDescription?: {
     processed: string
   }
-  featuresTitle?: string
-  featuresSubtitle?: string
-  featuresItems?: DrupalFeature[]
+  statsItems?: DrupalStatItem[]
+  featuredItemsTitle?: string
   ctaTitle?: string
   ctaDescription?: {
     processed: string
@@ -74,35 +79,28 @@ export interface DrupalHomepage extends DrupalNode {
   ctaSecondary?: string
 }
 
-export interface DrupalFeature {
-  id: string
-  title: string
-  description?: {
-    processed: string
-  }
-  icon?: string
-}
-
 export interface HomepageData {
   nodeHomepages: {
     nodes: DrupalHomepage[]
   }
 }
 
-// Feature color type
-export type FeatureColor = 'blue' | 'green' | 'purple' | 'yellow' | 'red' | 'indigo'
+export interface TermReference {
+  name: string
+}
+
 export interface DrupalProduct {
   id: string
   title: string
   path?: string
   body?: { processed: string; summary?: string }
-  productCategory?: string
+  productCategory?: TermReference[]
   price?: string
   unit?: string
-  available?: string
+  available?: boolean
   growingMethod?: string
   image?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
-  featured?: string
+  featured?: boolean
 }
 
 export interface ProductsData {
@@ -118,8 +116,8 @@ export interface DrupalSeason {
   body?: { processed: string; summary?: string }
   startMonth?: string
   endMonth?: string
-  whatsGrowing?: string
-  farmActivities?: string
+  whatsGrowing?: string[]
+  farmActivities?: string[]
   image?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
 }
 
@@ -137,8 +135,8 @@ export interface DrupalRecipe {
   prepTime?: string
   cookTime?: string
   servings?: string
-  ingredients?: string
-  recipeCategory?: string
+  ingredients?: string[]
+  recipeCategory?: TermReference[]
   image?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
 }
 
